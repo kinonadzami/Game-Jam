@@ -24,6 +24,10 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
+*.cs
+*.prefab
+*.scene
+*.unity
  
 # Builds
 *.apk
