@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distractX: 0.5
+  player: {fileID: 507993867}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
