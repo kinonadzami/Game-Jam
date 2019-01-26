@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
 
-        float p1NewPosition = Player1.transform.localPosition.x + Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed;
-        float p2NewPosition = Player2.transform.localPosition.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
+        float p1NewPosition = Player1.transform.position.x + Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed;
+        float p2NewPosition = Player2.transform.position.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     private float GetDistanceBetweenPlayers()
     {
-        return Mathf.Abs(Player1.transform.localPosition.x - Player2.transform.localPosition.x);
+        return Mathf.Abs(Player1.transform.position.x - Player2.transform.position.x);
     }
 
     private bool IsDistanceBelowMax()
@@ -64,23 +64,23 @@ public class PlayerController : MonoBehaviour
 
     private void SetCameraToPosition(float x, float y)
     {
-        Camera.main.transform.localPosition = new Vector3(x, y, -10);
+        Camera.main.transform.position = new Vector3(x, y, -10);
     }
     private void SetCameraToPosition(float y)
     {
-        Camera.main.transform.localPosition = new Vector3(Camera.main.transform.localPosition.x, y, -10);
+        Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, y, -10);
     }
 
     private void SetCameraMinHeight()
     {
-        float minHeight = Mathf.Min(Player1.transform.localPosition.y, Player2.transform.localPosition.y, Camera.main.transform.localPosition.y) + Camera.main.orthographicSize / 2;
+        float minHeight = Mathf.Min(Player1.transform.position.y, Player2.transform.position.y, Camera.main.transform.position.y) + Camera.main.orthographicSize / 2;
         SetCameraToPosition(minHeight);
     }
 
     private void SetCameraInBounds()
     {
-        float cameraX = Mathf.Clamp(Camera.main.transform.localPosition.x, Left.transform.localPosition.x + Camera.main.orthographicSize * Camera.main.aspect, Right.transform.localPosition.x - Camera.main.orthographicSize * Camera.main.aspect);
-        float cameraY = Mathf.Clamp(Camera.main.transform.localPosition.y, Bottom.transform.localPosition.y + Camera.main.orthographicSize, Top.transform.localPosition.y - Camera.main.orthographicSize);
+        float cameraX = Mathf.Clamp(Camera.main.transform.position.x, Left.transform.position.x + Camera.main.orthographicSize * Camera.main.aspect, Right.transform.position.x - Camera.main.orthographicSize * Camera.main.aspect);
+        float cameraY = Mathf.Clamp(Camera.main.transform.position.y, Bottom.transform.position.y + Camera.main.orthographicSize, Top.transform.position.y - Camera.main.orthographicSize);
         SetCameraToPosition(cameraX, cameraY);
     }
 

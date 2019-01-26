@@ -52,20 +52,27 @@ public class Lift : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.transform.parent = transform;
-        if (Type == 1)
+        if (collision.rigidbody.tag == "Player")
         {
-            activated = true;
+            collision.transform.parent = transform;
+            if (Type == 1)
+            {
+                activated = true;
+            }
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        collision.transform.parent = null;
-        if (Type == 1)
+        if (collision.rigidbody.tag == "Player")
         {
-            activated = false;
-            movingUpwards = false;
+            collision.transform.parent = null;
+            if (Type == 1)
+            {
+                activated = false;
+                movingUpwards = false;
+            }
+
         }
     }
 
