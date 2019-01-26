@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void SetCamera()
     {
-        SetCameraToPosition((Player1.transform.localPosition.x + Player2.transform.localPosition.x) / 2, (Player1.transform.localPosition.y + Player2.transform.localPosition.y) / 2);
+        SetCameraToPosition((Player1.transform.position.x + Player2.transform.position.x) / 2, (Player1.transform.position.y + Player2.transform.position.y) / 2);
         SetCameraMinHeight();
         SetCameraInBounds();
     }
@@ -83,4 +83,7 @@ public class PlayerController : MonoBehaviour
         float cameraY = Mathf.Clamp(Camera.main.transform.localPosition.y, Bottom.transform.localPosition.y + Camera.main.orthographicSize, Top.transform.localPosition.y - Camera.main.orthographicSize);
         SetCameraToPosition(cameraX, cameraY);
     }
+
+
+    
 }
