@@ -23,12 +23,14 @@ public class ItemGrabDropScr : MonoBehaviour
         {
             yield return new WaitUntil(() => Input.GetButtonUp("AButton_P1"));
         }
-        if(player == Player2)
+        if (player == Player2)
         {
             yield return new WaitUntil(() => Input.GetButtonUp("AButton_P2"));
         }
         if (transform.position.x <= player.transform.position.x + distractX && transform.position.x >= player.transform.position.x)
         {
+            Debug.Log("Rock:" + transform.position.x);
+            Debug.Log("Player:" + player.transform.position.x);
             player.GetComponent<PlayerGrabDropScr>().TakeItem(gameObject);
         }
     }
@@ -39,7 +41,7 @@ public class ItemGrabDropScr : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (transform.parent == null)
         {

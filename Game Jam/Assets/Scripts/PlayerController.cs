@@ -21,8 +21,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
 
-        float p1NewPosition = Player1.transform.localPosition.x + Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed;
+        float p1NewPosition = Player1.transform.localPosition.x - Mathf.Abs(Input.GetAxis("DPad_Horizontal_P1")) * MovementSpeed;
+        Player1.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P1"));
         float p2NewPosition = Player2.transform.localPosition.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
+        //Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
