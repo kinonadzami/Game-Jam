@@ -30,34 +30,42 @@ public class PlayerClimb : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
-        ClimbStart();
+        if (collision.gameObject.tag == "rope")
+        {
+            Debug.Log(collision.gameObject.name);
+            ClimbStart();
+        }
     }
     void OnTriggerStay2D(Collider2D collision)
     {
-
-        Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
-        Debug.Log("Stay");
-        if (name == "Player1")
+        if (collision.gameObject.tag == "rope")
         {
-            if (Input.GetAxis("DPad_Vertical_P1") == -1)
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
+            Debug.Log("Stay");
+            if (name == "Player1")
             {
-                Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                if (Input.GetAxis("DPad_Vertical_P1") == -1)
+                {
+                    Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                }
             }
-        }
-        if (name == "Player2")
-        {
-            if (Input.GetAxis("DPad_Vertical_P2") == -1)
+            if (name == "Player2")
             {
-                Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                if (Input.GetAxis("DPad_Vertical_P2") == -1)
+                {
+                    Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                }
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Exit");
-        ClimbEnd();
+        if (collision.gameObject.tag == "rope")
+        {
+            Debug.Log("Exit");
+            ClimbEnd();
+        }
     }
 
     void Update()

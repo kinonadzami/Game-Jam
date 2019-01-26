@@ -33,6 +33,12 @@ public class ItemGrabDropScr : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+    }
+
+
     void Update()
     {
         if (transform.parent == null)
