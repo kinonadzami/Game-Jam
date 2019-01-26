@@ -19,6 +19,7 @@ public class Bump : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.attachedRigidbody.velocity = new Vector2(collision.attachedRigidbody.velocity.x, 0);
-        collision.attachedRigidbody.AddForce(Vector2.up * 300);
+        collision.attachedRigidbody.AddForce(Vector2.up * 300 * collision.attachedRigidbody.mass);
+        GetComponent<Animator>().Play("Bump");
     }
 }
