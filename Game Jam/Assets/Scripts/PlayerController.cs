@@ -5,23 +5,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float MovementSpeed = 0.1f;
+    [SerializeField] GameObject Player1;
+    [SerializeField] GameObject Player2;
     private string playerName;
 
     void Start()
-    {      
-        if (gameObject.name == "Player1")
-        {
-            playerName = "_P1";
-        }
-        if (gameObject.name == "Player2")
-        {
-            playerName = "_P2";
-        }
-
+    {
+        Physics2D.IgnoreCollision(Player1.GetComponent<Collider2D>(), Player2.GetComponent<Collider2D>());
     }
 
     void FixedUpdate()
     {
-        gameObject.transform.Translate(Input.GetAxis("DPad_Horizontal" + playerName) * MovementSpeed, 0, 0);
+        Player1.transform.Translate(Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed, 0, 0);
+        Player2.transform.Translate(Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed, 0, 0);
     }
 }
