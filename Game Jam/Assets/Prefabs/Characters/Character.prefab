@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4402276324549039881}
   - component: {fileID: 7617602674109026270}
   - component: {fileID: 1253617444190785717}
+  - component: {fileID: 1746009010833382915}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -159,3 +160,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Climbing: 0
   ClimbVelocity: 0
+--- !u!114 &1746009010833382915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402276324549039885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3884f32d7401fc40865ba5a031e860c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  Name: 
+  direction: 1
