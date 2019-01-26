@@ -35,8 +35,9 @@ public class PlayerGrabDropScr : MonoBehaviour
         if (holdingItem != null)
         {
             holdingItem.transform.SetParent(transform.parent);
-            holdingItem.GetComponent<Rigidbody2D>().AddForce(new Vector2(throwForce,0));
             holdingItem.GetComponent<Rigidbody2D>().simulated = true;
+            holdingItem.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
+            holdingItem.GetComponent<Rigidbody2D>().AddForce(new Vector2(throwForce * GetComponent<PlayerInfo>().direction, throwForce/5));
             holdingItem = null;
         }
     }
