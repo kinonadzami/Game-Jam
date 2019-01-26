@@ -6,6 +6,7 @@ public class PlayerGrabDropScr : MonoBehaviour
 {
     public GameObject holdingItem = null;
     public float fall = 0;
+    public float throwForce;
 
     public void TakeItem(GameObject item)
     {
@@ -29,6 +30,17 @@ public class PlayerGrabDropScr : MonoBehaviour
         }
     }
 
+    public void ThrowItem()
+    {
+        if (holdingItem != null)
+        {
+            holdingItem.transform.SetParent(transform.parent);
+            holdingItem.GetComponent<Rigidbody2D>().AddForce(new Vector2(throwForce,0));
+            holdingItem.GetComponent<Rigidbody2D>().simulated = true;
+            holdingItem = null;
+        }
+    }
+
     void Update()
     {
         if(name == "Player1")
@@ -45,6 +57,22 @@ public class PlayerGrabDropScr : MonoBehaviour
             {
                 Debug.Log("Drop P2");
                 DropItem();
+            }
+        }
+        if (name == "Player1")
+        {
+            if (Input.GetButtonUp("BButton_P1") && holdingItem != null)
+            {
+                Debug.Log("Throw P1");
+                ThrowItem();
+            }
+        }
+        if (name == "Player2")
+        {
+            if (Input.GetButtonUp("BButton_P2") && holdingItem != null)
+            {
+                Debug.Log("Throw P2");
+                ThrowItem();
             }
         }
     }
