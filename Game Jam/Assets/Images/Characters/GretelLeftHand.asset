@@ -1,0 +1,403 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
+  m_Name: GretelLeftHand
+  m_EditorClassIdentifier: 
+  m_ApiVersion: 4
+  m_Sprite: {fileID: 21300002, guid: f735733d277d05c4886fd65b9e0fefbb, type: 3}
+  m_SharedMesh: {fileID: 43111176882120380}
+--- !u!43 &43111176882120380
+Mesh:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GretelLeftHand
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 33
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 12
+    localAABB:
+      m_Center: {x: 0.010071099, y: -0.058833927, z: 0}
+      m_Extent: {x: 0.5524393, y: 0.3978409, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose:
+  - e00: -0.8893844
+    e01: -0.45716077
+    e02: 0
+    e03: 0.30828413
+    e10: 0.45716077
+    e11: -0.8893844
+    e12: 0
+    e13: 0.01324176
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -0.8893844
+    e01: -0.45716077
+    e02: 0
+    e03: -0.39171618
+    e10: 0.45716077
+    e11: -0.8893844
+    e12: 0
+    e13: 0.013241999
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 09000b000a000a0000000900070003000a000a0003000000030007000200010009000000070008000200040008000700040006000800050008000600000003000200
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 12
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 1
+      offset: 0
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 2
+      offset: 0
+      format: 0
+      dimension: 4
+    - stream: 2
+      offset: 16
+      format: 11
+      dimension: 4
+    m_DataSize: 960
+    _typelessdata: b856f43dece557be000000000000000000000000000080bf0000803f4a0890b400000000000080bfa47c9bbe48d1e9be000000000000000000000000000080bf0000803ff312b13300000000000080bf00144f3e661e26be000000000000000000000000000080bf0000803f4a0129b500000000000080bf297c26be14d22a3e000000000000000000000000000080bf0000803f5e96453500000000000080bf85fda13e5292ad3e000000000000000000000000000080bf0000803f44d7a6b500000000000080bfae00103fa4b80e3e000000000000000000000000000080bf0000803fd3bada3500000000000080bf4893e73e5278763e000000000000000000000000000080bf0000803fa11806b500000000000080bf8593dc3d29e89c3e000000000000000000000000000080bf0000803f2d448bb400000000000080bfcd6ca93e52c890bd000000000000000000000000000080bf0000803f2846083100000000000080bf5c7bccbe1fdbc8be000000000000000000000000000080bf0000803f72ced03400000000000080bfe114e6be295c0f3d000000000000000000000000000080bf0000803f8f5d263500000000000080bfa4d80abff6168cbe000000000000000000000000000080bf0000803f21d4403400000000000080bf279ecc3e0695013f0215bf3edbacf83e6c45cf3e849e023feb98c33e86a3093fa5ecd23ee94f0d3fe2ccda3ea90d093f0146d73efd360b3f1b3fcc3e279e0c3f9963d33e6592043f1705bc3e096cfb3e7e6bba3ea1d3063fb871b73e313e003f0000803f000000000000000000000000000000000100000000000000000000009706273fd1f2b13e0000000000000000010000000000000000000000000000000000803f000000000000000000000000000000000100000000000000000000000000803f000000000000000000000000000000000100000000000000000000000000803f000000800000000000000000000000000100000000000000000000000000803f000000800000000000000000000000000100000000000000000000000000803f000000800000000000000000000000000100000000000000000000000000803f000000800000000000000000000000000100000000000000000000000000803f00000080000000000000000000000000010000000000000000000000620a4f3f77d6433e000000000000000001000000000000000000000000000000a45d323fb8449b3e0000000000000000000000000100000000000000000000000000803f00000000000000000000000001000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.010071099, y: -0.058833927, z: 0}
+    m_Extent: {x: 0.5524393, y: 0.3978409, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
+--- !u!114 &114957997429268034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
+  m_Name: GretelLeftHand_Data
+  m_EditorClassIdentifier: 
+  m_PivotPoint: {x: 627.5, y: 628.5}
+  m_Vertices:
+  - {x: 639.4306, y: 607.4162}
+  - {x: 597.1315, y: 582.8325}
+  - {x: 647.7225, y: 612.27747}
+  - {x: 611.2417, y: 645.1817}
+  - {x: 659.13873, y: 662.4007}
+  - {x: 683.75104, y: 642.4376}
+  - {x: 672.72955, y: 652.56934}
+  - {x: 638.2703, y: 659.1459}
+  - {x: 660.5908, y: 621.43054}
+  - {x: 587.56213, y: 589.2703}
+  - {x: 582.5622, y: 632}
+  - {x: 573.2632, y: 601.13873}
+  m_BoneWeights:
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 0.6524443
+    weight1: 0.34755567
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: -0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: -0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: -0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: -0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: -0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 0.8087522
+    weight1: 0.1912478
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 0.69674134
+    weight1: 0.30325866
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  m_Edges:
+  - index1: 5
+    index2: 8
+  - index1: 2
+    index2: 8
+  - index1: 11
+    index2: 10
+  - index1: 7
+    index2: 10
+  - index1: 11
+    index2: 9
+  - index1: 4
+    index2: 7
+  - index1: 1
+    index2: 9
+  - index1: 6
+    index2: 4
+  - index1: 6
+    index2: 5
+  - index1: 1
+    index2: 0
+  - index1: 2
+    index2: 0
+  m_Holes: []
+  m_Indices: 090000000b0000000a0000000a000000000000000900000007000000030000000a0000000a0000000300000000000000030000000700000002000000010000000900000000000000070000000800000002000000040000000800000007000000040000000600000008000000050000000800000006000000000000000300000002000000
+  m_BindPoses:
+  - bindPose:
+      e00: -0.8893844
+      e01: -0.45716077
+      e02: 0
+      e03: 0.30828413
+      e10: 0.45716077
+      e11: -0.8893844
+      e12: 0
+      e13: 0.01324176
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.70000064
+    path: GretelBoneLeftHand
+    name: GretelBoneLeftHand
+    color: {r: 1, g: 0, b: 0, a: 1}
+    zOrder: 0
+  - bindPose:
+      e00: -0.8893844
+      e01: -0.45716077
+      e02: 0
+      e03: -0.39171618
+      e10: 0.45716077
+      e11: -0.8893844
+      e12: 0
+      e13: 0.013241999
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.5
+    path: GretelBoneLeftHand/GretelBoneLeftWrist
+    name: GretelBoneLeftWrist
+    color: {r: 1, g: 0.75, b: 0, a: 1}
+    zOrder: 0
+  m_Blendshapes: []
