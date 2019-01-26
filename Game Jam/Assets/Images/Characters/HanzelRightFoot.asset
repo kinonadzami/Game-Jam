@@ -1,0 +1,383 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
+  m_Name: HanzelRightFoot
+  m_EditorClassIdentifier: 
+  m_ApiVersion: 4
+  m_Sprite: {fileID: 21300026, guid: 182f35928a078ac4c9b92b8652ad26ee, type: 3}
+  m_SharedMesh: {fileID: 43225977671829532}
+--- !u!43 &43225977671829532
+Mesh:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HanzelRightFoot
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 10
+    localAABB:
+      m_Center: {x: 0.0076922625, y: 0.009488687, z: 0}
+      m_Extent: {x: 0.14871643, y: 0.29948866, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose:
+  - e00: 0.17505398
+    e01: -0.98455834
+    e02: 0
+    e03: 0.26978603
+    e10: 0.98455834
+    e11: 0.17505398
+    e12: 0
+    e13: -0.01964258
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: 0.02820101
+    e01: -0.9996018
+    e02: 0
+    e03: -0.22481406
+    e10: 0.9996018
+    e11: 0.02820101
+    e12: 0
+    e13: -0.05331973
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 040000000100020001000900050009000800000004000700010002000400050008000600020009000500070004000300
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 10
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 1
+      offset: 0
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 2
+      offset: 0
+      format: 0
+      dimension: 4
+    - stream: 2
+      offset: 16
+      format: 11
+      dimension: 4
+    m_DataSize: 800
+    _typelessdata: 4869bfbd1f4880be000000000000000000000000000080bf0000803f700bca3400000000000080bf1f95f2bd66163ebe000000000000000000000000000080bf0000803f2a77f63400000000000080bff668103ec3d5a3bc000000000000000000000000000080bf0000803f8308ec3400000000000080bfb81e053ee17a94be000000000000000000000000000080bf0000803fabba1d3500000000000080bf9a29203e009e7dbe000000000000000000000000000080bf0000803fa70d293500000000000080bf8583a03dc3f35d3e000000000000000000000000000080bf0000803f8e35373300000000000080bf0af7793d48329e3e000000000000000000000000000080bf0000803f47946fb500000000000080bf52d880bd3d4593be000000000000000000000000000080bf0000803f28d1d03400000000000080bf66ee09be0af59a3e000000000000000000000000000080bf0000803f45ba60b400000000000080bfa46810beb88e343e000000000000000000000000000080bf0000803ff019873400000000000080bffe72ba3ea507b43e4fa6b93eb9ccb63eebf3c13ee0ddbd3e9999c13ebf58b23ef071c23e1227b43eb2f2bf3ed0f7c73e9264bf3e2ee7cb3e426dbb3e8d72b23e3021b93e13a2cb3e5eedb83e453ec63ed257133f5c50d93e0000000000000000010000000000000000000000000000007c152a3f08d5ab3e000000000000000000000000010000000000000000000000c1894c3ffbd84d3e000000000000000000000000010000000000000000000000f298253f1bceb43e000000000000000001000000000000000000000000000000c4721b3f771ac93e0000000000000000000000000100000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f0000000000000000000000000000000000000000000000000000000070dd403f428a7c3e0000000000000000010000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000694773fa2bf063d000000000000000000000000010000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.0076922625, y: 0.009488687, z: 0}
+    m_Extent: {x: 0.14871643, y: 0.29948866, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
+--- !u!114 &114009774865995704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
+  m_Name: HanzelRightFoot_Data
+  m_EditorClassIdentifier: 
+  m_PivotPoint: {x: 592, y: 447}
+  m_Vertices:
+  - {x: 582.65375, y: 421.94498}
+  - {x: 580.15515, y: 428.43677}
+  - {x: 606.10254, y: 445.00006}
+  - {x: 605, y: 418}
+  - {x: 607.64087, y: 422.2327}
+  - {x: 599.8376, y: 468.67502}
+  - {x: 598.10266, y: 477.89774}
+  - {x: 585.70874, y: 418.23624}
+  - {x: 578.53015, y: 477.26508}
+  - {x: 577.8976, y: 464.63257}
+  m_BoneWeights:
+  - weight0: 0.5755588
+    weight1: 0.42444122
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.6643903
+    weight1: 0.33560967
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.79897696
+    weight1: 0.20102303
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.646865
+    weight1: 0.35313496
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.60721993
+    weight1: 0.39278004
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.75337887
+    weight1: 0.24662116
+    weight2: 0
+    weight3: 0
+    boneIndex0: 1
+    boneIndex1: 0
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.9671024
+    weight1: 0.0328976
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  m_Edges:
+  - index1: 3
+    index2: 7
+  - index1: 9
+    index2: 8
+  - index1: 6
+    index2: 8
+  - index1: 5
+    index2: 6
+  - index1: 2
+    index2: 5
+  - index1: 4
+    index2: 2
+  - index1: 4
+    index2: 3
+  - index1: 0
+    index2: 1
+  - index1: 9
+    index2: 1
+  - index1: 7
+    index2: 0
+  m_Holes: []
+  m_Indices: 040000000000000001000000020000000100000009000000050000000900000008000000000000000400000007000000010000000200000004000000050000000800000006000000020000000900000005000000070000000400000003000000
+  m_BindPoses:
+  - bindPose:
+      e00: 0.17505398
+      e01: -0.98455834
+      e02: 0
+      e03: 0.26978603
+      e10: 0.98455834
+      e11: 0.17505398
+      e12: 0
+      e13: -0.01964258
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.50000024
+    path: HanzelBoneRightFoot
+    name: HanzelBoneRightFoot
+    color: {r: 1, g: 0, b: 0, a: 1}
+    zOrder: 0
+  - bindPose:
+      e00: 0.02820101
+      e01: -0.9996018
+      e02: 0
+      e03: -0.22481406
+      e10: 0.9996018
+      e11: 0.02820101
+      e12: 0
+      e13: -0.05331973
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.4
+    path: HanzelBoneRightFoot/HanzelBoneRightSole
+    name: HanzelBoneRightSole
+    color: {r: 1, g: 0.75, b: 0, a: 1}
+    zOrder: 0
+  m_Blendshapes: []
