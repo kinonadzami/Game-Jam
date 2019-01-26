@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4402276324549039883}
   - component: {fileID: 4402276324549039882}
   - component: {fileID: 4402276324549039881}
+  - component: {fileID: 7617602674109026270}
+  - component: {fileID: 1253617444190785717}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -101,7 +103,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4402276324549039881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -128,3 +130,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &7617602674109026270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402276324549039885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a74c27bd734ae44af892677c6ae189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdingItem: {fileID: 0}
+  fall: 0
+  throwForce: 0
+--- !u!114 &1253617444190785717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402276324549039885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fec53ceb745ce342b1d80521a540949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Climbing: 0
+  ClimbVelocity: 0
