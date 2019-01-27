@@ -51,11 +51,11 @@ public class BossFightControls : MonoBehaviour
         float p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
         Player1.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P1"));
         //float p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
-        //Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
+        Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
 
         //if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         //{
-        //    Player1.transform.Translate(firstPlayerMovement * MovementSpeed, 0, 0);
+            Player1.transform.Translate(firstPlayerMovement * MovementSpeed, 0, 0);
         //    Player2.transform.Translate(secondPlayerMovement * MovementSpeed, 0, 0);
         //}
 
@@ -64,7 +64,7 @@ public class BossFightControls : MonoBehaviour
         if (action)
         {
             buttonTimer -= Time.fixedDeltaTime;
-            if (Input.GetButtonDown("AButton_P1"))
+            if (Input.GetButtonDown("AButton_P2"))
             {
                 if (reqButton == "a")
                 {
@@ -79,7 +79,7 @@ public class BossFightControls : MonoBehaviour
                 AButton.SetActive(false);
                 action = false;
             }
-            if (Input.GetButtonDown("BButton_P1"))
+            if (Input.GetButtonDown("BButton_P2"))
             {
                 if (reqButton == "b")
                 {
@@ -94,7 +94,7 @@ public class BossFightControls : MonoBehaviour
                 AButton.SetActive(false);
                 action = false;
             }
-            if (Input.GetAxis("DPad_Horizontal") == 1)
+            if (Input.GetAxis("DPad_Horizontal_P2") == 1)
             {
                 if (reqButton == "right")
                 {
@@ -109,7 +109,7 @@ public class BossFightControls : MonoBehaviour
                 RightButton.SetActive(false);
                 action = false;
             }
-            if (Input.GetAxis("DPad_Horizontal") == -1)
+            if (Input.GetAxis("DPad_Horizontal_P2") == -1)
             {
                 if (reqButton == "left")
                 {
