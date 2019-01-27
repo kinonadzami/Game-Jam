@@ -42,7 +42,7 @@ public class MenuButtonClicker : MonoBehaviour
         switch (index)
         {
             case 0:
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("Level");
                 break;
             case 1:
                 //SceneManager.LoadScene();
