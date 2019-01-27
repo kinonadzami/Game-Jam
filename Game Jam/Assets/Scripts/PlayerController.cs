@@ -36,9 +36,9 @@ public class PlayerController : MonoBehaviour
         }
 
         float p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
-        Player1.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P1"));
+        Player1.GetComponent<Animator>().SetInteger("Move", Mathf.Abs((int) firstPlayerMovement));
         float p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
-        Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
+        Player2.GetComponent<Animator>().SetInteger("Move", Mathf.Abs((int) secondPlayerMovement));
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
