@@ -49,20 +49,20 @@ public class PlayerClimb : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ladder")
         {
-            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
+            //Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
             Debug.Log("Stay");
             if (name == "Player1")
             {
                 if (Input.GetAxis("DPad_Vertical_P1") == -1)
                 {
-                    Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                    //Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
                 }
             }
             if (name == "Player2")
             {
                 if (Input.GetAxis("DPad_Vertical_P2") == -1)
                 {
-                    Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                    //Physics2D.IgnoreCollision(collision.gameObject.GetComponent<RopeClimb>().Top.GetComponent<Collider2D>(), GetComponent<Collider2D>());
                 }
             }
         }
