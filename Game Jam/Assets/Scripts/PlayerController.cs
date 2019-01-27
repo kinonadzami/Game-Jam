@@ -20,14 +20,28 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        float firstPlayerMovement = Input.GetAxis("DPad_Horizontal_P1");
+        float secondPlayerMovement = Input.GetAxis("DPad_Horizontal_P2");
 
-        float p1NewPosition = Player1.transform.position.x + Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed;
-        float p2NewPosition = Player2.transform.position.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
+        if (firstPlayerMovement == 0)
+        {
+            firstPlayerMovement = (Input.GetKey(KeyCode.A)) ? -1 : 0;
+            firstPlayerMovement = (Input.GetKey(KeyCode.D)) ? 1 : firstPlayerMovement;
+        }
+
+        if (secondPlayerMovement == 0)
+        {
+            secondPlayerMovement = (Input.GetKey(KeyCode.K)) ? -1 : 0;
+            secondPlayerMovement = (Input.GetKey(KeyCode.Semicolon)) ? 1 : secondPlayerMovement;
+        }
+
+        float p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
+        float p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
-            Player1.transform.Translate(Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed, 0, 0);
-            Player2.transform.Translate(Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed, 0, 0);
+            Player1.transform.Translate(firstPlayerMovement * MovementSpeed, 0, 0);
+            Player2.transform.Translate(secondPlayerMovement * MovementSpeed, 0, 0);
         }
         SetCamera();
     }
