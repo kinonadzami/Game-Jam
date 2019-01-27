@@ -22,13 +22,12 @@ public class PlayerController : MonoBehaviour
     {
         float firstPlayerMovement = Input.GetAxis("DPad_Horizontal_P1");
         float secondPlayerMovement = Input.GetAxis("DPad_Horizontal_P2");
-
-<<<<<<< HEAD
-        float p1NewPosition = Player1.transform.localPosition.x - Mathf.Abs(Input.GetAxis("DPad_Horizontal_P1")) * MovementSpeed;
+        
+        float p1NewPosition = Player1.transform.position.x - Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed;
         Player1.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P1"));
-        float p2NewPosition = Player2.transform.localPosition.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
+        float p2NewPosition = Player2.transform.position.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
         //Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
-=======
+
         if (firstPlayerMovement == 0)
         {
             firstPlayerMovement = (Input.GetKey(KeyCode.A)) ? -1 : 0;
@@ -41,9 +40,8 @@ public class PlayerController : MonoBehaviour
             secondPlayerMovement = (Input.GetKey(KeyCode.Semicolon)) ? 1 : secondPlayerMovement;
         }
 
-        float p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
-        float p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
->>>>>>> ab48a7695bd6980e36109a8ff0b9ee9f4f035c6c
+        p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
+        p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
