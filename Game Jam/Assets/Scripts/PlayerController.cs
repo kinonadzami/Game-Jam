@@ -35,10 +35,13 @@ public class PlayerController : MonoBehaviour
             secondPlayerMovement = (Input.GetKey(KeyCode.Semicolon)) ? 1 : secondPlayerMovement;
         }
 
+        Player1.GetComponent<Animator>().SetInteger("Move", (int) firstPlayerMovement);
         float p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
-        Player1.GetComponent<Animator>().SetInteger("Move", Mathf.Abs((int) firstPlayerMovement));
+        p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
+
+        Player2.GetComponent<Animator>().SetInteger("Move", (int) secondPlayerMovement);
         float p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
-        Player2.GetComponent<Animator>().SetInteger("Move", Mathf.Abs((int) secondPlayerMovement));
+        p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
