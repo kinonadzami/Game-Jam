@@ -20,23 +20,42 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        float firstPlayerMovement = Input.GetAxis("DPad_Horizontal_P1");
+        float secondPlayerMovement = Input.GetAxis("DPad_Horizontal_P2");
 
+<<<<<<< HEAD
         float p1NewPosition = Player1.transform.localPosition.x - Mathf.Abs(Input.GetAxis("DPad_Horizontal_P1")) * MovementSpeed;
         Player1.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P1"));
         float p2NewPosition = Player2.transform.localPosition.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
         //Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
+=======
+        if (firstPlayerMovement == 0)
+        {
+            firstPlayerMovement = (Input.GetKey(KeyCode.A)) ? -1 : 0;
+            firstPlayerMovement = (Input.GetKey(KeyCode.D)) ? 1 : firstPlayerMovement;
+        }
+
+        if (secondPlayerMovement == 0)
+        {
+            secondPlayerMovement = (Input.GetKey(KeyCode.K)) ? -1 : 0;
+            secondPlayerMovement = (Input.GetKey(KeyCode.Semicolon)) ? 1 : secondPlayerMovement;
+        }
+
+        float p1NewPosition = Player1.transform.position.x + firstPlayerMovement * MovementSpeed;
+        float p2NewPosition = Player2.transform.position.x + secondPlayerMovement * MovementSpeed;
+>>>>>>> ab48a7695bd6980e36109a8ff0b9ee9f4f035c6c
 
         if (IsDistanceBelowMax(p1NewPosition, p2NewPosition))
         {
-            Player1.transform.Translate(Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed, 0, 0);
-            Player2.transform.Translate(Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed, 0, 0);
+            Player1.transform.Translate(firstPlayerMovement * MovementSpeed, 0, 0);
+            Player2.transform.Translate(secondPlayerMovement * MovementSpeed, 0, 0);
         }
         SetCamera();
     }
 
     private float GetDistanceBetweenPlayers()
     {
-        return Mathf.Abs(Player1.transform.localPosition.x - Player2.transform.localPosition.x);
+        return Mathf.Abs(Player1.transform.position.x - Player2.transform.position.x);
     }
 
     private bool IsDistanceBelowMax()
@@ -66,23 +85,23 @@ public class PlayerController : MonoBehaviour
 
     private void SetCameraToPosition(float x, float y)
     {
-        Camera.main.transform.localPosition = new Vector3(x, y, -10);
+        Camera.main.transform.position = new Vector3(x, y, -10);
     }
     private void SetCameraToPosition(float y)
     {
-        Camera.main.transform.localPosition = new Vector3(Camera.main.transform.localPosition.x, y, -10);
+        Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, y, -10);
     }
 
     private void SetCameraMinHeight()
     {
-        float minHeight = Mathf.Min(Player1.transform.localPosition.y, Player2.transform.localPosition.y, Camera.main.transform.localPosition.y) + Camera.main.orthographicSize / 2;
+        float minHeight = Mathf.Min(Player1.transform.position.y, Player2.transform.position.y, Camera.main.transform.position.y) + Camera.main.orthographicSize / 2;
         SetCameraToPosition(minHeight);
     }
 
     private void SetCameraInBounds()
     {
-        float cameraX = Mathf.Clamp(Camera.main.transform.localPosition.x, Left.transform.localPosition.x + Camera.main.orthographicSize * Camera.main.aspect, Right.transform.localPosition.x - Camera.main.orthographicSize * Camera.main.aspect);
-        float cameraY = Mathf.Clamp(Camera.main.transform.localPosition.y, Bottom.transform.localPosition.y + Camera.main.orthographicSize, Top.transform.localPosition.y - Camera.main.orthographicSize);
+        float cameraX = Mathf.Clamp(Camera.main.transform.position.x, Left.transform.position.x + Camera.main.orthographicSize * Camera.main.aspect, Right.transform.position.x - Camera.main.orthographicSize * Camera.main.aspect);
+        float cameraY = Mathf.Clamp(Camera.main.transform.position.y, Bottom.transform.position.y + Camera.main.orthographicSize, Top.transform.position.y - Camera.main.orthographicSize);
         SetCameraToPosition(cameraX, cameraY);
     }
 

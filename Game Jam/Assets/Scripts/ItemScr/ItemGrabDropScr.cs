@@ -43,7 +43,7 @@ public class ItemGrabDropScr : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (transform.parent == null)
+        if (transform.parent == null || transform.parent.tag != "Player" )
         {
             if (Input.GetButtonDown("AButton_P1"))
             {
