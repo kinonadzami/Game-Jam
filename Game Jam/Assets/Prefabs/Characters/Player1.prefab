@@ -951,8 +951,9 @@ GameObject:
   - component: {fileID: 1134696696}
   - component: {fileID: 1134696697}
   - component: {fileID: 1134696698}
+  - component: {fileID: 479429346}
   m_Layer: 0
-  m_Name: Player2
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,8 +1083,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 3
-  Name: Hansel
+  Name: Hrettle
   direction: 1
+--- !u!114 &479429346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134696695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53dbd3d289a27454eacd33c13dc2b9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1166868293
 GameObject:
   m_ObjectHideFlags: 0
