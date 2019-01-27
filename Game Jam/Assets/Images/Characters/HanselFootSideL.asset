@@ -10,44 +10,76 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
-  m_Name: HanselWristSide
+  m_Name: HanselFootSideL
   m_EditorClassIdentifier: 
   m_ApiVersion: 4
-  m_Sprite: {fileID: 21300016, guid: bd51ad072c1be03488ef2fab32b28d93, type: 3}
-  m_SharedMesh: {fileID: 43501067872648960}
---- !u!43 &43501067872648960
+  m_Sprite: {fileID: 21300026, guid: bd51ad072c1be03488ef2fab32b28d93, type: 3}
+  m_SharedMesh: {fileID: 43639070343239408}
+--- !u!43 &43639070343239408
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanselWristSide
+  m_Name: HanselFootSideL
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 15
+    indexCount: 6
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 7
+    vertexCount: 4
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.165, y: 0.49, z: 0}
+      m_Center: {x: 0.024972528, y: -0.025247797, z: 0}
+      m_Extent: {x: 0.255, y: 0.35000002, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: -0.087165765
-    e01: -0.99619377
+  - e00: -0.060280517
+    e01: -0.99818146
     e02: 0
-    e03: 0.38069534
-    e10: 0.99619377
-    e11: -0.087165765
+    e03: 0.17957231
+    e10: 0.99818146
+    e11: -0.060280517
     e12: 0
-    e13: -0.016793396
+    e13: -0.024461709
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: 0.023640748
+    e01: -0.9997206
+    e02: 0
+    e03: -0.21286216
+    e10: 0.9997206
+    e11: 0.023640748
+    e12: 0
+    e13: -0.006634494
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: 0.9900042
+    e01: -0.1410388
+    e02: 0
+    e03: -0.1262537
+    e10: 0.1410388
+    e11: 0.9900042
+    e12: 0
+    e13: 0.71714264
     e20: 0
     e21: 0
     e22: 1
@@ -63,10 +95,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 010006000500040006000100050000000200010005000200050003000000
+  m_IndexBuffer: 030000000100020001000000
   m_VertexData:
     serializedVersion: 2
-    m_VertexCount: 7
+    m_VertexCount: 4
     m_Channels:
     - stream: 0
       offset: 0
@@ -124,8 +156,8 @@ Mesh:
       offset: 16
       format: 11
       dimension: 4
-    m_DataSize: 576
-    _typelessdata: 7b14aebd48e1fa3e000000000000000000000000000080bf0000803f332e8f3400000000000080bfc3f5283e48e1fabe000000000000000000000000000080bf0000803fa7d25a3500000000000080bfc3f5283e48e1fa3e000000000000000000000000000080bf0000803f056a193500000000000080bfaea7f5bd7b2cf33e000000000000000000000000000080bf0000803f8401953600000000000080bfe17a14be48e1fabe000000000000000000000000000080bf0000803f0000000000000000000080bf1f7119beecd1653e000000000000000000000000000080bf0000803fac4f333500000000000080bfc3f528be6666e6be000000000000000000000000000080bf0000803fe6136a3500000000000080bf0000000000000000703dca3ecdcccc3e703dd23e96fca23e703dd23ecdcccc3e241fc93e6728cc3eeb51c83e96fca23e392ac83e1c78c13e14aec73e7fb1a43e00000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
+    m_DataSize: 320
+    _typelessdata: 528c6bbeec45a63e000000000000000000000000000080bf0000803f0000000000000000000080bf8f588f3e7b20c0be000000000000000000000000000080bf0000803f0000000000000000000080bf8f588f3eec45a63e000000000000000000000000000080bf0000803f0000000000000000000080bf528c6bbe7b20c0be000000000000000000000000000080bf0000803f0000000000000000000080bfae47113fcdcc0c3fa470193fbcbbfb3ea470193fcdcc0c3fae47113fbcbbfb3e7ad77f3fc918223a000000000000000000000000010000000200000000000000461f0e3f73c1e33e0000000000000000010000000000000002000000000000007aec7f3f892d9c39000000800000000000000000010000000200000000000000c19b5e3ffc90053e000000800000000001000000000000000200000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -179,8 +211,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.165, y: 0.49, z: 0}
+    m_Center: {x: 0.024972528, y: -0.025247797, z: 0}
+    m_Extent: {x: 0.255, y: 0.35000002, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -191,7 +223,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &114830369868163500
+--- !u!114 &114867123820442658
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,101 +233,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
-  m_Name: HanselWristSide_Data
+  m_Name: HanselFootSideL_Data
   m_EditorClassIdentifier: 
-  m_PivotPoint: {x: 640.5, y: 431}
+  m_PivotPoint: {x: 931.00275, y: 627.5248}
   m_Vertices:
-  - {x: 632, y: 480}
-  - {x: 657, y: 382}
-  - {x: 657, y: 480}
-  - {x: 628.5051, y: 478.49487}
-  - {x: 626, y: 382}
-  - {x: 625.51544, y: 453.44336}
-  - {x: 624, y: 386}
+  - {x: 908, y: 660}
+  - {x: 959, y: 590}
+  - {x: 959, y: 660}
+  - {x: 908, y: 590}
   m_BoneWeights:
-  - weight0: 1
-    weight1: 0
+  - weight0: 0.99938166
+    weight1: 0.0006183503
     weight2: 0
     weight3: 0
     boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
+    boneIndex1: 1
+    boneIndex2: 2
     boneIndex3: 0
-  - weight0: 1
-    weight1: 0
+  - weight0: 0.5551647
+    weight1: 0.44483528
     weight2: 0
     weight3: 0
-    boneIndex0: 0
+    boneIndex0: 1
     boneIndex1: 0
-    boneIndex2: 0
+    boneIndex2: 2
     boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
+  - weight0: 0.9997021
+    weight1: 0.00029788565
+    weight2: -0
     weight3: 0
     boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
+    boneIndex1: 1
+    boneIndex2: 2
     boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
+  - weight0: 0.8695641
+    weight1: 0.13043588
+    weight2: -0
     weight3: 0
-    boneIndex0: 0
+    boneIndex0: 1
     boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
+    boneIndex2: 2
     boneIndex3: 0
   m_Edges:
-  - index1: 6
-    index2: 5
   - index1: 3
-    index2: 5
-  - index1: 6
-    index2: 4
-  - index1: 0
-    index2: 3
-  - index1: 1
-    index2: 4
+    index2: 0
   - index1: 2
     index2: 0
+  - index1: 3
+    index2: 1
   - index1: 2
     index2: 1
   m_Holes: []
-  m_Indices: 010000000600000005000000040000000600000001000000050000000000000002000000010000000500000002000000050000000300000000000000
+  m_Indices: 030000000000000001000000020000000100000000000000
   m_BindPoses:
   - bindPose:
-      e00: -0.087165765
-      e01: -0.99619377
+      e00: -0.060280517
+      e01: -0.99818146
       e02: 0
-      e03: 0.38069534
-      e10: 0.99619377
-      e11: -0.087165765
+      e03: 0.17957231
+      e10: 0.99818146
+      e11: -0.060280517
       e12: 0
-      e13: -0.016793396
+      e13: -0.024461709
       e20: 0
       e21: 0
       e22: 1
@@ -304,9 +303,53 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.64
-    path: LHand/LWrist
-    name: LWrist
+    boneLength: 0.39112842
+    path: LFoot
+    name: LFoot
     color: {r: 1, g: 0, b: 0, a: 1}
+    zOrder: 0
+  - bindPose:
+      e00: 0.023640748
+      e01: -0.9997206
+      e02: 0
+      e03: -0.21286216
+      e10: 0.9997206
+      e11: 0.023640748
+      e12: 0
+      e13: -0.006634494
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0.08848159
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.5152792
+    path: LFoot/LShin
+    name: LShin
+    color: {r: 1, g: 0.75, b: 0, a: 1}
+    zOrder: 0
+  - bindPose:
+      e00: 0.9900042
+      e01: -0.1410388
+      e02: 0
+      e03: -0.1262537
+      e10: 0.1410388
+      e11: 0.9900042
+      e12: 0
+      e13: 0.71714264
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0.08848159
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.36
+    path: LFoot/LShin/LSole
+    name: LSole
+    color: {r: 0.5, g: 1, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []
