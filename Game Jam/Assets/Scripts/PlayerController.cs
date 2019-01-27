@@ -22,11 +22,12 @@ public class PlayerController : MonoBehaviour
     {
         float firstPlayerMovement = Input.GetAxis("DPad_Horizontal_P1");
         float secondPlayerMovement = Input.GetAxis("DPad_Horizontal_P2");
-
-
+        
         Player1.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P1"));
         float p1NewPosition = Player1.transform.position.x + Input.GetAxis("DPad_Horizontal_P1") * MovementSpeed;
-        //Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
+
+        
+        Player2.GetComponent<Animator>().SetInteger("Move", (int)Input.GetAxis("DPad_Horizontal_P2"));
         float p2NewPosition = Player2.transform.position.x + Input.GetAxis("DPad_Horizontal_P2") * MovementSpeed;
 
         if (firstPlayerMovement == 0)
